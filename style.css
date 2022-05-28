@@ -1,0 +1,431 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1400px;
+  width: 100%;
+  max-height: 970px;
+}
+
+/* first page */
+
+.gridpart {
+  background-color: #dddddd;
+  display: grid;
+  grid-template-areas:
+    "lefttoppart middletoppart righttoppart"
+    "leftmiddlepart textmiddlepart textmiddlepart"
+    "leftmiddlepart bottonpart bottonpartright";
+}
+
+.leftgrid {
+  grid-area: lefttoppart;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftgrid:hover {
+  color: blue;
+}
+.leftgridpart span {
+  font-family: "Poppins-ExtraBold";
+  color: #0081ff;
+}
+
+.leftgridpart .Roca {
+  display: inline-block;
+  font-family: "Poppins-ExtraBold";
+  font-size: 40px;
+}
+
+.leftgridpart .Template {
+  font-family: "Montserrat-Regular";
+  font-size: 13px;
+  color: #b3b3b3;
+  height: 16px;
+  transform: translateY(-15px);
+}
+
+.rightgrid {
+  grid-area: righttoppart;
+  position: relative;
+  width: 230px;
+}
+
+.rightside {
+  font-family: "Poppins-ExtraBold";
+}
+
+.rightside .number {
+  font-size: 158.3px;
+}
+
+.rightside .About {
+  color: #373737;
+  font-size: 43.17px;
+  position: absolute;
+  top: 35%;
+  transform: translateX(-15px);
+  transition: 0.1s;
+}
+.rightgrid .About:hover {
+  color: #6636e9;
+  transition: 2s;
+}
+
+.infogrid {
+  grid-area: textmiddlepart;
+}
+.item4 {
+  grid-area: leftmiddlepart;
+}
+.bottongrid {
+  grid-area: bottonpartright;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.information {
+  height: 380px;
+}
+
+.logos {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  /* align-items: left; */
+  transform: translateX(-37px);
+}
+
+.logos a {
+  display: inline-block;
+  gap: 20px;
+}
+.Iam {
+  font-family: "Regular";
+  font-size: 49.7px;
+}
+
+.namelastname {
+  font-family: "GlacialIndifference-Bold";
+  font-size: 71px;
+}
+
+.profession {
+  font-family: "Regular";
+  font-size: 23.29px;
+  transform: translateX(5px);
+}
+
+.profession:hover {
+  color: #6636e9;
+  transition: 5s;
+}
+
+.bottongrid .satisfication {
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+  color: black;
+  width: 320px;
+}
+.bottongrid .satisfication:hover {
+  color: #e93656;
+}
+
+.bottongrid .satisfication .line {
+  background-color: #e93656;
+  height: 6px;
+  width: 100%;
+  margin-bottom: 47px;
+  margin-top: 10px;
+}
+
+.bottongrid .satisfication .hundred {
+  color: #e93656;
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+}
+
+
+
+/* second page */
+.container .myBiography{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+    margin: 0;
+    max-width: 1400px;
+}
+
+
+.myinformation{
+    max-width: 350px;
+    direction: rtl;
+    padding-top: 83px;
+    margin: 0;
+}
+
+
+.myinformation h2{
+    color: #e93656;
+    font-family: 'Bold';
+    font-size: 40px;
+    padding-bottom: 6px;
+    max-width: 311px;
+}
+
+
+.myinformation .job{
+    font-family: Muli;
+    font-size: 14px;
+    padding-bottom: 33px;
+    color: #DAAE19;
+}
+
+.myinformation .short{
+    font-family: 'Muli-Regular';
+    font-size: 15px;
+    padding-bottom: 60px;
+}
+
+.myinformation button{
+    padding: 13px 40px 17px 50px;
+    font-family: 'Bold';
+    font-size: 15px;
+    color: white;
+    border: none;
+    background-color: #E93656;
+    cursor: pointer;
+}
+
+.profile-photo{
+    margin: 0;
+    padding-left: 60px;
+    max-width: 300px;
+  max-height: 500px;
+
+} 
+
+
+.point {
+    height: 15px;
+    width: 15px;
+    /* margin: 0 2px; */
+    text-align: center;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #15263E;
+}
+
+ .ranking{
+    margin: 0;
+    padding-left: 70px;
+}
+.mycharts{
+    width: 300px;
+    height: 200px;
+}
+
+
+.progresive{
+  background-color: #F0F0F0;
+    width: 100%;
+    height: 15px;
+}
+
+.progresive::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 242, 0);
+  transition: width 0.25s ease-out;
+}
+.progresive::after{
+  width: 100%;
+}
+
+.progress-percent{
+    margin: 0;
+    height: 100%;
+    margin-top: 10px;
+    background-color:#E93656;
+    opacity: 0;
+    transition: .6s;
+    
+}
+.chart{
+    margin-bottom: 10px;
+}
+h4{
+    font-family: 'Bold';
+    font-size: 20px;
+    color: #555555;
+}
+h4 span{
+    color:#E93656;
+}
+ 
+
+/* bottoncontactinformation */
+
+.bottoncontactdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:  #131A36 0% 0% no-repeat padding-box;;
+  height: 210px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  padding: 60px 300px;
+}
+.circleDiv{
+  display: flex;
+  text-align: center;
+}
+.bottoncontactdiv .circleDiv a{
+  align-items: center;
+  margin-top: 100px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.bottoncontactdiv .circleDot {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #00000000 0% 0% no-repeat padding-box;
+  border: 2px dashed #FFFFFF;
+  opacity: 1;  
+  padding: 20px;
+  background-color: transparent;
+  text-align: center;
+}
+.circleDot:hover{
+  cursor: pointer;
+  background-color:#E93656;
+  transition: 500ms linear;
+  opacity: 1;
+}
+.bottoncontactdiv .circleDot a{
+  align-items: center;
+  margin-top: 100px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.bottoncontactdiv h4 {
+  font-family: GlacialIndifference-Bold;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+.bottoncontactdiv a{
+  color:#FFFFFF;
+  font-family: 'Muli';
+  font-size: 10px;  
+}
+
+
+
+
+
+/* services */
+
+
+
+.services {
+  margin: 203px 0 160px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.gridsection{
+  padding: 203px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .flip-card-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+.flip-card {
+  width: 285px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAFAFA;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 0 10px 10px;
+}
+
+.flip-card-back {
+  opacity: 0;
+  position: absolute;
+  width: 285px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #15263E;
+}
+.flip-card-back h3 {
+  font-size: 22px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Bold';
+  padding-top: 30px;
+}
+.flip-card-back p {
+  margin-top: 19px!important;
+  color: #ECECEC;
+  text-align: center!important;
+  width: 80%;
+  font-family: 'Muli';
+}
+.flip-card h3 {
+  padding-top: 30px;
+}
+
+.flip-card:hover .flip-card-back,
+.flip-card:active .flip-card-back{
+  opacity: 1;
+} */
+
+
+
+
+
+
+
+
