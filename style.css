@@ -346,23 +346,117 @@ h4 span{
 
 
 
-.services {
-  margin: 203px 0 160px;
+.gridsection{
+ padding: 203px 0 160px;
   display: flex;
   justify-content: center;
+
+}
+
+.serviceDiv{
+  display: grid;
+  grid-template-areas:  
+  "first second third fourth"
+  "first second third fourth";
+  gap: 10px;
+  background-color: #FAFAFA;
 }
 
 
-.gridsection{
-  padding: 203px ;
+.firstservice{
+  
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+  
+}
+
+.secondservice{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.thirdservice{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.fourthservice{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 
+/* .serviceDiv h4{
+  width: 176px;
+  height: 30px;
+  font-size: 22px;
+
+} */
 
 
 
+.anotherside {
+  opacity: 0;
+  position: absolute;
+  width: 285px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #15263E;
+}
+.anotherside h4 {
+  font-size: 22px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Bold';
+  padding-top: 30px;
+}
+.anotherside p {
+  margin-top: 19px!important;
+  color: #ECECEC;
+  text-align: center!important;
+  width: 80%;
+  font-family: 'Muli';
+}
+.anotherside h4 {
+  padding-top: 30px;
+}
 
-
+.firstservice:hover .anotherside,
+.secondservice:hover .anotherside,
+.thirdservice:hover .anotherside,
+.fourthservice:hover .anotherside,
+.firstservice:active .anotherside
+.secondservice:active .anotherside
+.thirdservice:active .anotherside
+.fourthservice:active .anotherside{
+  opacity: 1;
+  transition: 2s;;
+  cursor: pointer;
+}
 
 
 
