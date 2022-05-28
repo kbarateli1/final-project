@@ -463,63 +463,6 @@ h4 span{
 
 
 
-/* .flip-card-inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
-}
-.flip-card {
-  width: 285px;
-  height: 360px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #FAFAFA;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 0 0 10px 10px;
-}
-
-.flip-card-back {
-  opacity: 0;
-  position: absolute;
-  width: 285px;
-  height: 360px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #15263E;
-}
-.flip-card-back h3 {
-  font-size: 22px;
-  color: #FFFFFF;
-  text-align: center;
-  font-family: 'Bold';
-  padding-top: 30px;
-}
-.flip-card-back p {
-  margin-top: 19px!important;
-  color: #ECECEC;
-  text-align: center!important;
-  width: 80%;
-  font-family: 'Muli';
-}
-.flip-card h3 {
-  padding-top: 30px;
-}
-
-.flip-card:hover .flip-card-back,
-.flip-card:active .flip-card-back{
-  opacity: 1;
-} */
-
-
-
-
-
 
 
 
