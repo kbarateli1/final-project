@@ -149,98 +149,90 @@
   font-size: 24px;
 }
 
-
-
 /* second page */
-.container .myBiography{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 130px;
-    margin: 0;
-    max-width: 1400px;
+.container .myBiography {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 130px;
+  margin: 0;
+  max-width: 1400px;
 }
 
-
-.myinformation{
-    max-width: 350px;
-    direction: rtl;
-    padding-top: 83px;
-    margin: 0;
+.myinformation {
+  max-width: 350px;
+  direction: rtl;
+  padding-top: 83px;
+  margin: 0;
 }
 
-
-.myinformation h2{
-    color: #e93656;
-    font-family: 'Bold';
-    font-size: 40px;
-    padding-bottom: 6px;
-    max-width: 311px;
+.myinformation h2 {
+  color: #e93656;
+  font-family: "Bold";
+  font-size: 40px;
+  padding-bottom: 6px;
+  max-width: 311px;
 }
 
-
-.myinformation .job{
-    font-family: Muli;
-    font-size: 14px;
-    padding-bottom: 33px;
-    color: #DAAE19;
+.myinformation .job {
+  font-family: Muli;
+  font-size: 14px;
+  padding-bottom: 33px;
+  color: #daae19;
 }
 
-.myinformation .short{
-    font-family: 'Muli-Regular';
-    font-size: 15px;
-    padding-bottom: 60px;
+.myinformation .short {
+  font-family: "Muli-Regular";
+  font-size: 15px;
+  padding-bottom: 60px;
 }
 
-.myinformation button{
-    padding: 13px 40px 17px 50px;
-    font-family: 'Bold';
-    font-size: 15px;
-    color: white;
-    border: none;
-    background-color: #E93656;
-    cursor: pointer;
+.myinformation button {
+  padding: 13px 40px 17px 50px;
+  font-family: "Bold";
+  font-size: 15px;
+  color: white;
+  border: none;
+  background-color: #e93656;
+  cursor: pointer;
 }
 
-.profile-photo{
-    margin: 0;
-    padding-left: 60px;
-    max-width: 300px;
+.profile-photo {
+  margin: 0;
+  padding-left: 60px;
+  max-width: 300px;
   max-height: 500px;
-
-} 
-
+}
 
 .point {
-    height: 15px;
-    width: 15px;
-    /* margin: 0 2px; */
-    text-align: center;
-    background-color: #bbb;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  height: 15px;
+  width: 15px;
+  /* margin: 0 2px; */
+  text-align: center;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 .active {
-    background-color: #15263E;
+  background-color: #15263e;
 }
 
- .ranking{
-    margin: 0;
-    padding-left: 70px;
+.ranking {
+  margin: 0;
+  padding-left: 70px;
 }
-.mycharts{
-    width: 300px;
-    height: 200px;
-}
-
-
-.progresive{
-  background-color: #F0F0F0;
-    width: 100%;
-    height: 15px;
+.mycharts {
+  width: 300px;
+  height: 200px;
 }
 
-.progresive::before{
+.progresive {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 15px;
+}
+
+.progresive::before {
   content: "";
   position: absolute;
   left: 0;
@@ -250,31 +242,29 @@
   background-color: rgb(255, 242, 0);
   transition: width 0.25s ease-out;
 }
-.progresive::after{
+.progresive::after {
   width: 100%;
 }
 
-.progress-percent{
-    margin: 0;
-    height: 100%;
-    margin-top: 10px;
-    background-color:#E93656;
-    opacity: 0;
-    transition: .6s;
-    
+.progress-percent {
+  margin: 0;
+  height: 100%;
+  margin-top: 10px;
+  background-color: #e93656;
+  opacity: 0;
+  transition: 0.6s;
 }
-.chart{
-    margin-bottom: 10px;
+.chart {
+  margin-bottom: 10px;
 }
-h4{
-    font-family: 'Bold';
-    font-size: 20px;
-    color: #555555;
+h4 {
+  font-family: "Bold";
+  font-size: 20px;
+  color: #555555;
 }
-h4 span{
-    color:#E93656;
+h4 span {
+  color: #e93656;
 }
- 
 
 /* bottoncontactinformation */
 
@@ -282,18 +272,18 @@ h4 span{
   display: flex;
   justify-content: center;
   align-items: center;
-  background:  #131A36 0% 0% no-repeat padding-box;;
+  background: #131a36 0% 0% no-repeat padding-box;
   height: 210px;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 100px;
   padding: 60px 300px;
 }
-.circleDiv{
+.circleDiv {
   display: flex;
   text-align: center;
 }
-.bottoncontactdiv .circleDiv a{
+.bottoncontactdiv .circleDiv a {
   align-items: center;
   margin-top: 100px;
   font-size: 30px;
@@ -307,19 +297,19 @@ h4 span{
   border-radius: 50%;
   display: inline-block;
   background: #00000000 0% 0% no-repeat padding-box;
-  border: 2px dashed #FFFFFF;
-  opacity: 1;  
+  border: 2px dashed #ffffff;
+  opacity: 1;
   padding: 20px;
   background-color: transparent;
   text-align: center;
 }
-.circleDot:hover{
+.circleDot:hover {
   cursor: pointer;
-  background-color:#E93656;
+  background-color: #e93656;
   transition: 500ms linear;
   opacity: 1;
 }
-.bottoncontactdiv .circleDot a{
+.bottoncontactdiv .circleDot a {
   align-items: center;
   margin-top: 100px;
   font-size: 30px;
@@ -329,54 +319,33 @@ h4 span{
 
 .bottoncontactdiv h4 {
   font-family: GlacialIndifference-Bold;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
 }
-.bottoncontactdiv a{
-  color:#FFFFFF;
-  font-family: 'Muli';
-  font-size: 10px;  
+.bottoncontactdiv a {
+  color: #ffffff;
+  font-family: "Muli";
+  font-size: 10px;
 }
-
-
-
-
 
 /* services */
 
-
-
-.gridsection{
- padding: 203px 0 160px;
+.gridsection {
+  padding: 203px 0 160px;
   display: flex;
   justify-content: center;
-
 }
 
-.serviceDiv{
+.serviceDiv {
   display: grid;
-  grid-template-areas:  
-  "first second third fourth"
-  "first second third fourth";
+  grid-template-areas:
+    "first second third fourth"
+    "first second third fourth";
   gap: 10px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
-
-.firstservice{
-  
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  width: 200px;
-  height: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  
-  
-}
-
-.secondservice{
+.firstservice {
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 200px;
   height: 280px;
@@ -386,7 +355,7 @@ h4 span{
   text-align: center;
 }
 
-.thirdservice{
+.secondservice {
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 200px;
   height: 280px;
@@ -396,7 +365,7 @@ h4 span{
   text-align: center;
 }
 
-.fourthservice{
+.thirdservice {
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 200px;
   height: 280px;
@@ -406,6 +375,15 @@ h4 span{
   text-align: center;
 }
 
+.fourthservice {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 
 /* .serviceDiv h4{
   width: 176px;
@@ -413,8 +391,6 @@ h4 span{
   font-size: 22px;
 
 } */
-
-
 
 .anotherside {
   opacity: 0;
@@ -425,21 +401,21 @@ h4 span{
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: #15263E;
+  background-color: #15263e;
 }
 .anotherside h4 {
   font-size: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
-  font-family: 'Bold';
+  font-family: "Bold";
   padding-top: 30px;
 }
 .anotherside p {
-  margin-top: 19px!important;
-  color: #ECECEC;
-  text-align: center!important;
+  margin-top: 19px !important;
+  color: #ececec;
+  text-align: center !important;
   width: 80%;
-  font-family: 'Muli';
+  font-family: "Muli";
 }
 .anotherside h4 {
   padding-top: 30px;
@@ -449,16 +425,120 @@ h4 span{
 .secondservice:hover .anotherside,
 .thirdservice:hover .anotherside,
 .fourthservice:hover .anotherside,
-.firstservice:active .anotherside
-.secondservice:active .anotherside
-.thirdservice:active .anotherside
-.fourthservice:active .anotherside{
+.firstservice:active
+  .anotherside
+  .secondservice:active
+  .anotherside
+  .thirdservice:active
+  .anotherside
+  .fourthservice:active
+  .anotherside {
   opacity: 1;
-  transition: 2s;;
+  transition: 2s;
   cursor: pointer;
 }
 
 
+/* 
+recommendation part */
+
+
+.recommendation {
+  background-image: url('images/keti/countdown-bg@2x.jpg');
+  height: 570px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.recommendation .personRecommendations{
+  display: flex;
+  align-items: center;
+} 
+
+
+.recommendation .personRecommendations p{
+  font-size: 15px;
+  color: #FFFFFF;
+  font-family: Roboto-Light;
+  height: 78px;
+  direction: rtl;
+  margin-right: 50px;
+}
+
+.recommendation .personRecommendations h6{
+  color: #E93656;
+  font-size: 13px;
+  font-family: Roboto-Regular;
+  padding-top: 38px;
+  padding-bottom: 9px;
+}
+
+.recommendation .personRecommendations h4{
+  color: #FFFFFF;
+  font-size: 28px;
+  font-family: GlacialIndifference-Bold;
+}
+
+.recommendation .personRecommendations i{
+  color: #FFFFFF;
+  width: 59px;
+  height: 56px;
+}
+
+
+
+.recommendation .personRecommendations .circle{
+
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  display: block;
+  border: 2px dashed white;
+  text-align: center;
+  padding: 15px;
+  margin-right: 50px;
+}
+
+.recommendation .personRecommendations .circle:hover{
+  background-color: #B97679;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+
+}
+
+.recommendation .personRecommendations .circle img{
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  align-items: center;
+
+}
+
+.recommendation .recommendationrightside{
+  display: block;
+}
+
+
+.recommendation .recommendationpoints p{
+  cursor: pointer;
+  border: 2px solid white;
+  height: 15px;
+  width: 15px;
+  margin: 12px;
+
+}
+
+
+.recommendation .recommendationpoints p:hover{
+  border: 2px solid #E93656;
+  transition: background-color 0.6s ease;
+
+}
 
 
 
