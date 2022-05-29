@@ -197,6 +197,10 @@
   cursor: pointer;
 }
 
+.filterDiv{
+  display: none;
+
+}
 .profile-photo {
   margin: 0;
   padding-left: 60px;
@@ -516,8 +520,6 @@ recommendation part */
 }
 
 
-
-
 /* last projects */
 
 
@@ -565,10 +567,8 @@ recommendation part */
   background-color: #15263E;
   transition: 01.5s ;
 }
-
-
-
 .projectnames{
+  overflow: hidden;
   display: grid;
   grid-template-areas: 
   "firstproject secondproject thirdproject"
@@ -620,5 +620,8 @@ recommendation part */
   height: 350px;
   width: 300px;
   color: #FFFFFF;
+}
 
+.show {
+  display: block;
 }
