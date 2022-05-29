@@ -450,17 +450,10 @@ recommendation part */
   justify-content: center;
   align-items: center;
 }
-
-
-
-
-
 .recommendation .personRecommendations{
   display: flex;
   align-items: center;
 } 
-
-
 .recommendation .personRecommendations p{
   font-size: 15px;
   color: #FFFFFF;
@@ -469,7 +462,6 @@ recommendation part */
   direction: rtl;
   margin-right: 50px;
 }
-
 .recommendation .personRecommendations h6{
   color: #E93656;
   font-size: 13px;
@@ -477,23 +469,17 @@ recommendation part */
   padding-top: 38px;
   padding-bottom: 9px;
 }
-
 .recommendation .personRecommendations h4{
   color: #FFFFFF;
   font-size: 28px;
   font-family: GlacialIndifference-Bold;
 }
-
 .recommendation .personRecommendations i{
   color: #FFFFFF;
   width: 59px;
   height: 56px;
 }
-
-
-
 .recommendation .personRecommendations .circle{
-
   width: 170px;
   height: 170px;
   border-radius: 100%;
@@ -503,46 +489,136 @@ recommendation part */
   padding: 15px;
   margin-right: 50px;
 }
-
 .recommendation .personRecommendations .circle:hover{
   background-color: #B97679;
   transition: background-color 0.6s ease;
   cursor: pointer;
-
 }
-
 .recommendation .personRecommendations .circle img{
   width: 140px;
   height: 140px;
   border-radius: 100%;
   align-items: center;
-
 }
-
 .recommendation .recommendationrightside{
   display: block;
 }
-
-
 .recommendation .recommendationpoints p{
   cursor: pointer;
   border: 2px solid white;
   height: 15px;
   width: 15px;
   margin: 12px;
-
 }
-
-
 .recommendation .recommendationpoints p:hover{
   border: 2px solid #E93656;
   transition: background-color 0.6s ease;
-
 }
 
 
 
 
+/* last projects */
 
 
 
+.latestprojects h2{
+  padding-top: 144px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  font-size: GlacialIndifference-Bold;
+  color: #2E2E2E;
+}
+
+.projectoffers{
+  display: flex;
+  padding-top: 55px;
+  max-width: 1200px;
+}
+#sidebar{
+  background-color: #15263E;
+  width: 240px;
+  color: white;
+  width: 240px;
+  height: min-content;
+}
+#sidebar button{
+  list-style-type: none;
+  display: block;
+  padding: 20px;
+  background-color: #15263E;
+  cursor: pointer;
+  color: white;
+  font-family: GlacialIndifference-Bold;
+  font-size: 20px;
+  text-align: left;
+  border: none;
+}
+#sidebar button:hover{
+  background-color: #E93656;
+  transition: 01.5s ;
+}
+
+.sidebar .active{
+  background-color: #15263E;
+  transition: 01.5s ;
+}
+
+
+
+.projectnames{
+  display: grid;
+  grid-template-areas: 
+  "firstproject secondproject thirdproject"
+  "firstproject secondproject thirdproject";
+}
+.workIdeas{
+  background-color: #555555;
+  height: 350px;
+  width: 300px;
+  color: #FFFFFF;
+}
+
+.MockupDesign .month{
+ color: #FFFFFF;
+ font-size: 11px;
+ font-family: Muli;
+}
+
+.MockupDesign{
+  background-color:#000000;
+  height: 350px;
+  width: 300px;
+  color: #FFFFFF;
+
+}
+.PSDDesign{
+  background-color: #555555;
+  height: 350px;
+  width: 300px;
+  color: #FFFFFF;
+
+}
+.mylogo{
+  background-color: #848484;
+  height: 350px;
+  width: 300px;
+  color: #FFFFFF;
+
+}
+.myPresentation{
+  background-color: #555555;
+  height: 350px;
+  width: 300px;
+  color: #FFFFFF;
+
+}
+.myIcons{
+  background-color: #848484 ;
+  height: 350px;
+  width: 300px;
+  color: #FFFFFF;
+
+}
