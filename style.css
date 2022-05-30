@@ -197,10 +197,7 @@
   cursor: pointer;
 }
 
-.filterDiv{
-  display: none;
 
-}
 .profile-photo {
   margin: 0;
   padding-left: 60px;
@@ -532,6 +529,7 @@ recommendation part */
   font-size: 70px;
   font-size: GlacialIndifference-Bold;
   color: #2E2E2E;
+
 }
 
 .projectoffers{
@@ -545,6 +543,8 @@ recommendation part */
   color: white;
   width: 240px;
   height: min-content;
+  position: relative;
+  display: block;
 }
 #sidebar button{
   list-style-type: none;
@@ -557,16 +557,52 @@ recommendation part */
   font-size: 20px;
   text-align: left;
   border: none;
+
+
 }
 #sidebar button:hover{
   background-color: #E93656;
   transition: 01.5s ;
 }
 
-.sidebar .active{
+#sidebar .active{
   background-color: #15263E;
   transition: 01.5s ;
 }
+
+
+.filterDiv{
+  display: none;
+  position: relative;
+  text-align: center;
+  display: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+
+.filterDiv i{
+  margin-top: 105px;
+  display: block;
+    color: white;
+    text-align: center;
+  
+}
+
+
+.filterDiv i:hover{
+  color: #E93656;
+}
+
+.filterDiv p{
+  font-family: 'Bold';
+  font-size: 23px;
+  color: white;
+}
+
+
+
+
 .projectnames{
   overflow: hidden;
   display: grid;
@@ -624,4 +660,40 @@ recommendation part */
 
 .show {
   display: block;
+}
+
+
+
+
+.Backdiv{
+  opacity: 0;
+  position: absolute;
+  background-color: #15263E;
+  float: left;
+  height: 350px;
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* margin: 0 0 10px 10px; */
+  text-align: center;
+  margin-top: -67%;
+}
+.Backdiv .projecttitle{
+  font-family: 'Bold';
+  font-size: 23px;
+  color: black;
+}
+.Backdiv i{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 105px 0 17px;
+}
+.Backdiv .workIdeas i:hover{
+  color: #E93656;
+}
+.filterDiv:hover .Backdiv,
+.filterDiv:active .Backdiv{
+  opacity: 1;
+  cursor: pointer;
+  transition-property: all;
 }
