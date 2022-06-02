@@ -445,7 +445,7 @@ recommendation part */
 
 
 .recommendation {
-  background-image: url('images/keti/countdown-bg@2x.jpg');
+  background-image: url('images/countdown-bg@2x.png');
   height: 570px;
   display: flex;
   justify-content: center;
@@ -785,10 +785,10 @@ font-family: 'Muli';
   margin-bottom: 10px;
 }
 .articleimagepart img {
-  width: 100%;
+  width: 80%;
   height: 100%;
-  width: 950px;
-  height: 590px
+  max-width: 970px;
+  /* height: 590px */
 }
 .rightsidearticle{
   flex-direction: row-reverse;
@@ -801,6 +801,7 @@ font-family: 'Muli';
   align-items: center;
   width: 20%;
   position: relative;
+  width: 123px;
 }
 .datearticle span{
   font-size: 30px;
@@ -814,80 +815,185 @@ font-family: 'Muli';
 
 /* rosa */
 
-
-.articles{
-  display: block;
+.rosateamcontainer{
+  max-width: 1170px;
 }
 
-.articles-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.rosaTitle span {
-  color: #2ED279;
+.rosateamevent h6 {
+  color: rgba(46, 210, 121, 1);
+  font-family: "GlacialIndifference-Bold";
   font-size: 14px;
-  font-family: "Bold";
+  text-align: center;
+  margin-top: 169px;
+  
 }
-.rosaarticles-main-title h2 {
-  color: #262526;
+.rosateamevent h2 {
+  color: rgba(38, 37, 38, 1);
   font-size: 70px;
-  font-family: "Bold";
+  font-family: "GlacialIndifference-Bold";
   text-align: center;
-}
-.rosaTeam {
-  text-align: center;
-  margin-bottom: 57px;
-  margin-top: 96px;
 }
 
-.mainBlock {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+
+.mypartners{
+  margin-top: 121px;
+  display: grid;
+  grid-template-areas: 
+  "first first first first first";
+  grid-column: auto;
+  text-align: center;
 }
-.partnerBlock {
-  background-color: #15263E;
+
+.myclients{
+  /* background-image: url('images/Starbucks_Coffee_Logo.svg.png'); */
   width: 110px;
   height: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
   transition: all 1s ease;
 }
-.mainBlockText {
-  visibility: hidden;
-  text-align: center;
+
+
+.mypartners img{
+  width: 110px;
+  height: 110px;
+  align-items: center;
+  background-color: white;
+  position: absolute;
 }
-.mainBlockText h3 {
+
+
+.hideText{
+  visibility: hidden;
+  align-items: center;
+}
+
+.hideText span{
+  font-size: 13px;
+  text-align: center;
+  color: rgba(98, 98, 98, 1);
+  font-family: 'Roboto-Light';
+}
+
+.hideText h3{
   color: #161616;
   font-family: "Poppins-SemiBold";
   font-size: 16px;
 }
-.mainBlockText span {
-  color: #626262;
-  font-family: "Roboto-Light";
-  font-size: 13px;
-}
 
-.partnerBlock:hover,
-.partnerBlock:active {
+
+
+
+.myclients:hover,
+.myclients:active {
   transform: scale(2.5, 2);
   border: 3px solid #E93656;
   background-color: white;
   width: 140px;
   height: 140px;
 }
-.partnerBlock:hover .mainBlockText,
-.partnerBlock:active .mainBlockText {
+
+
+
+
+.myclients:hover .hideText,
+.myclients:active .hideText {
   visibility: visible;
   z-index: 1;
+
+
+}
+
+
+
+
+.myclients:hover img {
+border: none;
+display: none;
+}
+
+
+
+
+
+
+/* 
+.articles{
+    display: block;
+}
+
+.articles-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.rosaTitle span {
+    color: #2ED279;
+    font-size: 14px;
+    font-family: "Bold";
+}
+.rosaarticles-main-title h2 {
+    color: #262526;
+    font-size: 70px;
+    font-family: "Bold";
+    text-align: center;
+}
+.rosaTeam {
+    text-align: center;
+    margin-bottom: 57px;
+    margin-top: 96px;
+}
+
+.mainBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.partnerBlock {
+    background-color: #15263E;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    transition: all 1s ease;
+}
+.mainBlockText {
+    visibility: hidden;
+    text-align: center;
+}
+.mainBlockText h3 {
+    color: #161616;
+    font-family: "Poppins-SemiBold";
+    font-size: 16px;
+}
+.mainBlockText span {
+    color: #626262;
+    font-family: "Roboto-Light";
+    font-size: 13px;
+}
+
+.partnerBlock:hover,
+.partnerBlock:active {
+    transform: scale(2.5, 2);
+    border: 3px solid #E93656;
+    background-color: white;
+    width: 140px;
+    height: 140px;
+}
+.partnerBlock:hover .mainBlockText,
+.partnerBlock:active .mainBlockText {
+    visibility: visible;
+    z-index: 1;
 }
 .partnerBlock i {
-  color: white;
-  position: absolute;
+    color: white;
+    position: absolute;
 }
+
+} */
