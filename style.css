@@ -842,6 +842,7 @@ font-family: 'Muli';
   "first first first first first";
   grid-column: auto;
   text-align: center;
+  
 }
 
 .myclients{
@@ -976,4 +977,88 @@ textarea{
 }
 .contact-us-articles-title span:hover{
   color: #E93656;;
+}
+
+
+
+/* footerpart */
+
+footer {
+  background-color: #171717;
+}
+
+.lastpart{
+  background-color: #282828;
+
+}
+
+.footertitle{
+  display: flex;
+  justify-content: center;
+  display: inline;
+}
+
+
+.footertitle p{
+  font-size: 55.42px;
+  font-family: "Poppins-ExtraBold";
+  color: #FFFFFF;
+ 
+}
+
+.footertitle span{
+  color: #E93656;
+  font-size: 45.72px;
+  font-family: 'Poppins-ExtraBold';
+}
+
+.footer-color-text {
+  font-family: 'Poppins-ExtraBold';
+  font-size: 45.72px;
+  color: #E93656;
+  text-align: center;
+
+}
+
+.footer-body {
+  justify-content: center;
+  text-align: center;    
+  height: 490px;
+}
+.footer-text {
+  padding-top: 110.73px;
+}
+.loremi {
+  font-family: 'Roboto-Regular';
+  font-size: 17px;
+  color: #A5A5A5;
+  width: 50%;
+  padding-top: 22.23px;
+  padding-bottom: 29px;
+}
+
+.footer-tq p {
+  background-color: #283344;
+  font-family: 'Muli';
+  font-size: 15px;
+  color: #A0A8B7;
+  height: 82px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.footer-logo a {
+  color: #E93656;;
+  margin: 0;
+  padding-left: 10px;
+  font-weight: none;
+  justify-content: space-between;
+  size: 17px;
+}
+.footer-tq {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
