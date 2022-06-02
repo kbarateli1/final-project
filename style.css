@@ -887,11 +887,13 @@ font-family: 'Muli';
 
 .myclients:hover,
 .myclients:active {
-  transform: scale(2.5, 2);
+  
   border: 3px solid #E93656;
   background-color: white;
-  width: 140px;
-  height: 140px;
+  width: 180px;
+  height: 180px;
+  transform:scale3d();
+  cursor: pointer;
 }
 
 
@@ -912,88 +914,3 @@ font-family: 'Muli';
 border: none;
 display: none;
 }
-
-
-
-
-
-
-/* 
-.articles{
-    display: block;
-}
-
-.articles-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.rosaTitle span {
-    color: #2ED279;
-    font-size: 14px;
-    font-family: "Bold";
-}
-.rosaarticles-main-title h2 {
-    color: #262526;
-    font-size: 70px;
-    font-family: "Bold";
-    text-align: center;
-}
-.rosaTeam {
-    text-align: center;
-    margin-bottom: 57px;
-    margin-top: 96px;
-}
-
-.mainBlock {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.partnerBlock {
-    background-color: #15263E;
-    width: 110px;
-    height: 110px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    transition: all 1s ease;
-}
-.mainBlockText {
-    visibility: hidden;
-    text-align: center;
-}
-.mainBlockText h3 {
-    color: #161616;
-    font-family: "Poppins-SemiBold";
-    font-size: 16px;
-}
-.mainBlockText span {
-    color: #626262;
-    font-family: "Roboto-Light";
-    font-size: 13px;
-}
-
-.partnerBlock:hover,
-.partnerBlock:active {
-    transform: scale(2.5, 2);
-    border: 3px solid #E93656;
-    background-color: white;
-    width: 140px;
-    height: 140px;
-}
-.partnerBlock:hover .mainBlockText,
-.partnerBlock:active .mainBlockText {
-    visibility: visible;
-    z-index: 1;
-}
-.partnerBlock i {
-    color: white;
-    position: absolute;
-}
-
-} */
