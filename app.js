@@ -124,3 +124,68 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+//input
+
+const yourname = document.querySelector(".yourname");
+const email = document.querySelector(".emailaddress");
+const website = document.querySelector(".yourwebsite");
+const massage = document.querySelector("#messagearea");
+const submit = document.querySelector(".submit");
+const formcontent = document.querySelector(".form-content");
+
+async function getUsers() {
+  try {
+    const response = await fetch("http://api.kesho.me/v1/user-test/contact");
+    const users = await response.json();
+  } catch (e) {
+    console.log("Error - ", e);
+  }
+}
+
+async function createUser(userData) {
+  try {
+    const response = await fetch("http://api.kesho.me/v1/user-test/create", {
+      method: "post",
+      body: JSON.stringify(userData),
+      headers: { "Content-Type": "application/json" },
+    });
+    await response.json();
+    await getUsers(); 
+  } catch (e) {
+    console.log("Error - ", e);
+  }
+}
+
+formcontent.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const userData = {
+    first_name: yourname.value,
+    email: email.value,
+    website: website.value,
+    massage: massage.value,
+  };
+
+  if (yourname.value === "") {
+  
+    await createUser(userData);
+  }
+
+  formcontent.reset();
+});
+
+
+
+function myFunction() {
+	alert("Thank you for getting in touch! We appreciate you contacting us.");
+}
+
+
+
+const modalOpenBtn = document.querySelector('.submit');
+modalOpenBtn.addEventListener('click', () => {
+   myFunction() ;
+})
+
+
