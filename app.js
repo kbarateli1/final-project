@@ -1,3 +1,7 @@
+//introduce myself
+
+
+
 //image Slider
 
 let slideIndex = 0;
@@ -24,24 +28,24 @@ function runSlides() {
 
 //charts
 
+const progressPercent = document.querySelectorAll(".progress-percent");
+const myskills = document.querySelector(".myprogressbars");
 
-const skillsSection = document.querySelector(".mycharts");
-const progressBars = document.querySelectorAll(".progress-percent");
 function showProgress() {
-	progressBars.forEach(progressBars => {
+	progressPercent.forEach(progressBar => {
 		const value = progressBar.dataset.progress;
-		progressBars.style.opacity = 1;
-		progressBars.style.width = `${value}%`;
+		progressBar.style.opacity = 1;
+		progressBar.style.width = `${value}%`;
 	});
 }
 function hideProgress() {
-	progressBars.forEach(p => {
+	progressPercent.forEach(p => {
 		p.style.opacity = 0;
 		p.style.width = 0;
 	});
 }
 window.addEventListener("scroll", () => {
-	const sectionPos = skillsSection.getBoundingClientRect().top;
+	const sectionPos = myskills.getBoundingClientRect().top;
 	const screenPos = window.innerHeight / 2;
 	if (sectionPos < screenPos) {
 		showProgress();
@@ -49,8 +53,6 @@ window.addEventListener("scroll", () => {
 		hideProgress();
 	}
 })
-
-
 
 
 
@@ -177,15 +179,14 @@ formcontent.addEventListener("submit", async (e) => {
 
 
 
-function myFunction() {
+function alertFunction() {
 	alert("Thank you for getting in touch! We appreciate you contacting us.");
 }
 
 
-
 const modalOpenBtn = document.querySelector('.submit');
 modalOpenBtn.addEventListener('click', () => {
-   myFunction() ;
+   alertFunction() ;
 })
 
 

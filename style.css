@@ -1,4 +1,4 @@
-* {
+ * {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
@@ -13,7 +13,6 @@
 
 .gridpart {
   background-color: #dddddd;
-  
   display: grid;
   grid-template-areas:
     "lefttoppart middletoppart righttoppart"
@@ -55,6 +54,7 @@
   width: 200px;
   /* max-height: 200px; */
   text-align: center;
+  right: 50%;
 }
 
 
@@ -227,54 +227,70 @@
   background-color: #15263e;
 }
 
-.ranking {
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+/* progress bar */
+.myprogress{
   margin: 0;
   padding-left: 70px;
 }
-.mycharts {
-  width: 300px;
-  height: 200px;
-}
-
-.progresive {
-  background-color: #f0f0f0;
+.myprogressbars{
   width: 100%;
-  height: 15px;
+  height: 100%;
 }
-
-.progresive::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: rgb(255, 242, 0);
-  transition: width 0.25s ease-out;
-}
-.progresive::after {
+.showprogress{
   width: 100%;
+  height: 10px;
+  background-color: #F0F0F0;
 }
 
-.progress-percent {
+.progress-percent{
+  background-color:#E93656;
   margin: 0;
   height: 100%;
-  margin-top: 10px;
-  background-color: #e93656;
-  opacity: 0;
-  transition: 0.6s;
+  margin-top: 30px;
+  background-color:#E93656;
+  opacity: 1;
+  transition: 1.5s;
 }
-.chart {
-  margin-bottom: 10px;
+.Graphic{
+  margin-bottom: 12.99px;
 }
-h4 {
-  font-family: "Bold";
+h4{
+  font-family: 'Bold';
   font-size: 20px;
   color: #555555;
 }
-h4 span {
-  color: #e93656;
+h4 span{
+  color:#E93656;
 }
+
+
+
 
 /* bottoncontactinformation */
 
@@ -555,6 +571,11 @@ recommendation part */
   position: relative;
   display: block;
 }
+
+.active {
+  background-color: #15263E;
+}
+
 #sidebar button{
   list-style-type: none;
   display: block;
@@ -1078,4 +1099,4 @@ footer {
   align-items: center;
   display: flex;
 }
-
+ 
