@@ -706,7 +706,6 @@ width: 300px;
   height: 350px;
   width: 300px;
   color: #FFFFFF;
-
 }
 .myIcons{
   background-color: #848484 ;
@@ -714,14 +713,9 @@ width: 300px;
   width: 300px;
   color: #FFFFFF;
 }
-
 .show {
   display: block;
 }
-
-
-
-
 .Backdiv{
   opacity: 0;
   position: absolute;
@@ -836,20 +830,15 @@ font-family: 'Muli';
   display: inline-block;
   margin-bottom: 10px;
 }
-
 .articleimagepart img {
   width: 100%;
   height: 100%;
   width: 700px;
   height: 590px;
 }
-
-
 .rightsidearticle {
   flex-direction: row-reverse;
 }
-
-
 .datearticle{
   background-color: #15263E;
   display: flex;
@@ -969,7 +958,6 @@ display: none;
   margin-bottom: 46px;
 }
 
-
 input[type=text], textarea {
   padding: 10px;
   border: 1px solid #ccc;
@@ -979,7 +967,6 @@ input[type=text], textarea {
   background-color: #FAFAFA;
   width: 290px;
   font-family: 'Poppins-SemiBold';
-
 }
 input[type=submit] {
   background-color: transparent;
