@@ -126,10 +126,10 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-//input
+//
 
 const yourname = document.querySelector(".yourname");
-const email = document.querySelector(".emailaddress");
+const email = document.querySelector("#emailaddress");
 const website = document.querySelector(".yourwebsite");
 const massage = document.querySelector("#messagearea");
 const submit = document.querySelector(".submit");
@@ -146,7 +146,7 @@ async function getUsers() {
 
 async function createUser(userData) {
   try {
-    const response = await fetch("http://api.kesho.me/v1/user-test/create", {
+    const response = await fetch("http://api.kesho.me/v1/user-test/contact", {
       method: "post",
       body: JSON.stringify(userData),
       headers: { "Content-Type": "application/json" },
@@ -187,5 +187,6 @@ const modalOpenBtn = document.querySelector('.submit');
 modalOpenBtn.addEventListener('click', () => {
    alertFunction() ;
 })
+
 
 

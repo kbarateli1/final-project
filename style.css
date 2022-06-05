@@ -12,11 +12,6 @@
 /* first page */
 
 
-
-
-
-
-
 .gridpart {
   background-color: #dddddd;
   display: grid;
@@ -55,16 +50,15 @@
   transform: translateY(-15px);
 }
 
-.leftgridpart img{
+/* .leftgridpart img{
   margin-top: 100px;
   width: 400px;
   /* max-height: 200px; */
-  text-align: center;
+  /* text-align: center;
   right: 50%;
   bottom: 50%;
-
-  position: inherit;
-}
+  transform: -60%;
+} */
 
 
 .rightgrid {
@@ -137,12 +131,10 @@
   font-size: 23.29px;
   transform: translateX(5px);
 }
-
 .profession:hover {
   color: #6636e9;
   transition: 5s;
 }
-
 .bottongrid .satisfication {
   font-family: "Montserrat-Bold";
   font-size: 24px;
@@ -152,7 +144,6 @@
 .bottongrid .satisfication:hover {
   color: #e93656;
 }
-
 .bottongrid .satisfication .line {
   background-color: #e93656;
   height: 6px;
@@ -160,7 +151,6 @@
   margin-bottom: 47px;
   margin-top: 10px;
 }
-
 .bottongrid .satisfication .hundred {
   color: #e93656;
   font-family: "Montserrat-Bold";
@@ -235,9 +225,6 @@
 .active {
   background-color: #15263e;
 }
-
-
-
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -252,15 +239,6 @@
   from {opacity: .4} 
   to {opacity: 1}
 }
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
 
 /* progress bar */
 .myprogress{
@@ -299,17 +277,14 @@ h4 span{
 }
 
 
-
-
 /* bottoncontactinformation */
 
 .bottoncontactdiv {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #131a36 0% 0% no-repeat padding-box;
+  background-color: rgba(0, 0, 0, 0.8);
   height: 210px;
-  align-items: center;
   flex-wrap: wrap;
   margin-top: 100px;
   padding: 60px 300px;
@@ -331,7 +306,7 @@ h4 span{
   width: 90px;
   border-radius: 50%;
   display: inline-block;
-  background: #00000000 0% 0% no-repeat padding-box;
+  background: #00000000 0% 0% no-repeat;
   border: 2px dashed #ffffff;
   opacity: 1;
   padding: 20px;
@@ -380,7 +355,7 @@ h4 span{
   background-color: #fafafa;
 }
 
-.firstservice {
+.servicefirstside{
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 200px;
   height: 280px;
@@ -389,44 +364,6 @@ h4 span{
   justify-content: center;
   text-align: center;
 }
-
-.secondservice {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  width: 200px;
-  height: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.thirdservice {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  width: 200px;
-  height: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.fourthservice {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  width: 200px;
-  height: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-/* .serviceDiv h4{
-  width: 176px;
-  height: 30px;
-  font-size: 22px;
-
-} */
-
 .anotherside {
   opacity: 0;
   position: absolute;
@@ -456,22 +393,16 @@ h4 span{
   padding-top: 30px;
 }
 
-.firstservice:hover .anotherside,
-.secondservice:hover .anotherside,
-.thirdservice:hover .anotherside,
-.fourthservice:hover .anotherside,
-.firstservice:active
-  .anotherside
-  .secondservice:active
-  .anotherside
-  .thirdservice:active
-  .anotherside
-  .fourthservice:active
-  .anotherside {
+
+.servicefirstside:hover .anotherside,
+.fservicefirstside:active
+  .anotherside{
   opacity: 1;
-  transition: 2s;
+  transition: all 1s ease;
   cursor: pointer;
-}
+
+} 
+
 
 
 /* 
@@ -484,6 +415,7 @@ recommendation part */
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 1;
 }
 .recommendation .personRecommendations{
   display: flex;
@@ -561,16 +493,16 @@ recommendation part */
   display: flex;
   justify-content: center;
   font-size: 70px;
-  font-size: GlacialIndifference-Bold;
+  font-size: 'GlacialIndifference-Bold';
   color: #2E2E2E;
-
 }
-
 .projectoffers{
   display: flex;
   padding-top: 55px;
   max-width: 1200px;
 }
+
+
 #sidebar{
   background-color: #15263E;
   width: 240px;
@@ -579,10 +511,6 @@ recommendation part */
   height: min-content;
   position: relative;
   display: block;
-}
-
-.active {
-  background-color: #15263E;
 }
 
 #sidebar button{
@@ -596,69 +524,109 @@ recommendation part */
   font-size: 20px;
   text-align: left;
   border: none;
+}
 
 
+.active {
+  background-color: #15263E;
 }
 #sidebar button:hover{
   background-color: #E93656;
   transition: 01.5s ;
 }
-
 #sidebar .active{
   background-color: #15263E;
   transition: 01.5s ;
 }
-
-
 .filterDiv{
-  display: none;
   position: relative;
-  text-align: center;
   display: none;
+  align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   height: 350px;
-width: 300px;
-
-
+  width: calc(100% / 3);
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .filterDiv i{
-  margin-top: 105px;
-  display: block;
-    color: white;
-    text-align: center;
-  
+  padding-top: 55px;
+  color: white;
+  text-align: center;
 }
-
-
 .filterDiv i:hover{
   color: #E93656;
 }
+.filterDiv img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
 
-.filterDiv p{
-  font-family: 'Bold';
+.filterDiv:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+ }
+ .filterDiv img:hover{
+  opacity: 0.2;
+  transition: 0.5s;
+}
+.filterDiv .projecttitle{
+  font-family: 'GlacialIndifference-Bold';
   font-size: 23px;
   color: white;
 }
 
+.workIdeas, .MockupDesign, .PSDDesign, .mylogo, .myPresentation, .myIcons{
+  height: 350px;
+  width: 300px;
+  color: #FFFFFF;
+}
+ .month {
+ color: #FFFFFF;
+ font-size: 11px;
+ font-family: Muli;
+}
+
+.show {
+  display: block;
+}
+.Backdiv{
+  opacity: 0;
+  position: absolute;
+  float: left;
+  height: 350px;
+  width: 300px;
+  border: none;
+  text-align: center;
+  margin-top: -80%;
+}
+
+.filterDiv:hover .Backdiv{ 
+  opacity: 1;
+  cursor: pointer;
+  transition: all 1s ease;
+  width: 100%;
+  height: 100%;
+  color: #111010;
+}
+
+.filterDiv:hover .month,
+.filterDiv:hover .projecttitle{ 
+  opacity: 1;
+  cursor: pointer;
+  transition-property: all 2s;
+  width: 100%;
+  height: 100%;
+  color: #E93656;
+  font-size: 40px;
+}
 
 
+/* last article */
+
+.latestarticles{
+  margin-top: 170px;
+}
 
 .projectnames{
   overflow: hidden;
@@ -666,98 +634,6 @@ width: 300px;
   grid-template-areas: 
   "firstproject secondproject thirdproject"
   "firstproject secondproject thirdproject";
-}
-.workIdeas{
-  background-color: #555555;
-  height: 350px;
-  width: 300px;
-  color: #FFFFFF;
-}
-
-.MockupDesign .month{
- color: #FFFFFF;
- font-size: 11px;
- font-family: Muli;
-}
-
-.MockupDesign{
-  background-color:#000000;
-  height: 350px;
-  width: 300px;
-  color: #FFFFFF;
-
-}
-.PSDDesign{
-  background-color: #555555;
-  height: 350px;
-  width: 300px;
-  color: #FFFFFF;
-
-}
-.mylogo{
-  background-color: #848484;
-  height: 350px;
-  width: 300px;
-  color: #FFFFFF;
-
-}
-.myPresentation{
-  background-color: #555555;
-  height: 350px;
-  width: 300px;
-  color: #FFFFFF;
-}
-.myIcons{
-  background-color: #848484 ;
-  height: 350px;
-  width: 300px;
-  color: #FFFFFF;
-}
-.show {
-  display: block;
-}
-.Backdiv{
-  opacity: 0;
-  position: absolute;
-  background-color: #15263E;
-  float: left;
-  height: 350px;
-  width: 300px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  /* margin: 0 0 10px 10px; */
-  text-align: center;
-  margin-top: -67%;
-}
-.Backdiv .projecttitle{
-  font-family: 'Bold';
-  font-size: 23px;
-  color: black;
-}
-.Backdiv i{
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 105px 0 17px;
-}
-.Backdiv .workIdeas i:hover{
-  color: #E93656;
-}
-.filterDiv:hover .Backdiv,
-.filterDiv:focus .Backdiv{
-  opacity: 1;
-  cursor: pointer;
-  transition-property: all;
-  width: 300px;
-  height: 350px;
-}
-
-
-
-/* last article */
-
-
-.latestarticles{
-  margin-top: 170px;
 }
 
 .firstarticlepart{
@@ -802,26 +678,25 @@ width: 300px;
   margin: 30px 0;
 }
 
-/* .articles-first img {
-  border-radius: 50%;
-  padding: 20px 25px;
-  background-color: antiquewhite;
-} */
+
 
 .graphicdesigner{
   margin-left: 57.6px;
   width: 41.5%;
   margin-top: 30px;
+  
 }
 .articledescription span {
   font-family: 'Muli-Regular';
   font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 30px;
   color: #888888;
 }
 .articledescription h5 {
   font-family: 'Bold';
   font-size: 40px;
-  margin: 5 0 29px;
+  margin: 5px 0 29px;
   color: #161616;
 }
 .articledescription p {
@@ -920,9 +795,10 @@ font-family: 'Muli';
   
   border: 3px solid #E93656;
   background-color: white;
-  width: 180px;
-  height: 180px;
-  transform:scale3d();
+  /* width: 180px;
+  height: 180px; */
+ 
+  transition: 0.5s;
   cursor: pointer;
 }
 .myclients:hover .hideText,
@@ -937,9 +813,10 @@ display: none;
 
 /* mappart */
 .contactdiv {
-  background: transparent url('images/Layer\ 5.png') 0% 0% no-repeat padding-box;
+  background: url('images/Layer\ 5.png');
+  background-color: rgba(0, 0, 0, 0.8);
   opacity: 1;
-  max-width: 1920px;
+  max-width: 100%;
   text-align: center;
   margin-top: 155px;
 }
@@ -962,7 +839,6 @@ input[type=text], textarea {
   padding: 10px;
   border: 1px solid #ccc;
   box-sizing: padding-box;
-  resize: horizontal;
   background: rgba(250, 250, 250, 1) 0% 0% no-repeat;
   opacity: 1;
   background-color: #FAFAFA;
@@ -981,7 +857,7 @@ input[type=submit] {
   font-family: 'GlacialIndifference-Bold';
 }
 
-input[type=mail] {
+input[type=email] {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -1055,9 +931,7 @@ footer {
   color: #E93656;;
   margin: 0;
   padding-left: 10px;
-  font-weight: none;
   justify-content: space-between;
-  size: 17px;
 }
 .licenses {
   align-items: center;
