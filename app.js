@@ -128,12 +128,7 @@ for (var i = 0; i < btns.length; i++) {
 
 //
 
-const yourname = document.querySelector(".yourname");
-const email = document.querySelector("#emailaddress");
-const website = document.querySelector(".yourwebsite");
-const massage = document.querySelector("#messagearea");
-const submit = document.querySelector(".submit");
-const formcontent = document.querySelector(".form-content");
+
 
 async function getUsers() {
   try {
@@ -151,6 +146,7 @@ async function createUser(userData) {
       body: JSON.stringify(userData),
       headers: { "Content-Type": "application/json" },
     });
+
     await response.json();
     await getUsers(); 
   } catch (e) {
@@ -158,7 +154,7 @@ async function createUser(userData) {
   }
 }
 
-formcontent.addEventListener("submit", async (e) => {
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const userData = {
@@ -178,15 +174,45 @@ formcontent.addEventListener("submit", async (e) => {
 
 
 
-function alertFunction() {
+
+const yourname = document.querySelector(".yourname");
+const email = document.querySelector("#emailaddress");
+const website = document.querySelector(".yourwebsite");
+const massage = document.querySelector("#messagearea");
+const submit = document.querySelector(".submit");
+const formcontent = document.querySelector(".form-content");
+
+function myalertFunction() {
 	alert("Thank you for getting in touch! We appreciate you contacting us.");
 }
-
-
 const modalOpenBtn = document.querySelector('.submit');
 modalOpenBtn.addEventListener('click', () => {
-   alertFunction() ;
+   myalertFunction() ;
 })
 
 
 
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    try {
+      console.log(email.value);
+    } catch (e) {
+      console.log('catch error', e);
+    }
+    const isEmailValid = validateEmail();
+    if(isEmailValid){
+      console.log('Call to backend api');
+    }
+  });
+  
+  function validateEmail(){
+   
+    if(!email.value.includes('@') || !emailInput.value.includes('.')){
+      emailInput.classList.add('has-error');
+      emailInput.parentNode.querySelector('.error-message').innerText = 'Invalid email';
+      return false;
+    }
+    emailInput.classList.remove('has-error');
+    emailInput.parentNode.querySelector('.error-message').innerText = '';
+    return true;
+  }
