@@ -257,11 +257,8 @@
         }
         .personRecommendations p{
             display: none;
-
         }
-
         .bottoncontactdiv .circleDiv a {
-            
             font-size: 15px;
             max-width:20px;
             max-height: 20px;
@@ -269,7 +266,32 @@
         .datearticle span{
             display: none;
         }
+        .footerlastpart{
+            height: 200px;
+            width: 200px;
+            background-color: transparent;
+        }
         .footerdescription{
             display: none;
         }
+        .licenses{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .licenses p {
+            padding-top: 10px;
+            font-size: 8px;
+            height: 40px;
+        
+        }
+        .footertitle{
+            display: none;
+        }
+        .socialnetwerks a {
+            padding-top: 20px;
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+          }
     }
